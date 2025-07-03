@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <!-- Locomotive Scroll CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+</head>
+<body>
+  <div class="cursor-blob"></div>
+
+  <!-- SCROLL CONTAINER -->
+  <div data-scroll-container>
+
+    <header data-scroll-section>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav class="navbar" id="navbar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <a href="#" id="haha">Home</a>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="nav-image">
+          <img src="img5.png" alt="Menu Image" />
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero-section" data-scroll-section>
+      <div class="hero-text">
+        <p class="caption" data-scroll data-scroll-speed="1">
+          I design clean, intuitive interfaces focused on real user needs balancing creativity, usability, and function for better digital experiences.
+        </p>
+        
+        
+        <div class="name-tag" data-scroll data-scroll-speed="13">
+          RAJABATHULA<br />
+          SAI DURGA MAHESH
+        </div>
+      </div>
+      <div class="hero-image" data-scroll data-scroll-speed="-1">
+        <img src="img6.png" alt="Profile" />
+      </div>
+    </main>
+
+    <section class="projects-section" data-scroll-section>
+      <h2 class="section-title" data-scroll data-scroll-speed="1">Project Screens</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-scroll data-scroll-speed="1">
+          <img src="img3.png" alt="Project 1" />
+          <h3>F1 Pulse</h3>
+          <p>F1 Pulse brings every Formula 1 fan closer to the action with race updates, exclusive merch, and a buzzing fan community, all in one place.</p>
+        </div>
+        <div class="project-card" data-scroll data-scroll-speed="2">
+          <img src="img8.png" alt="Project 2" />
+          <h3>Metro</h3>
+          <p>A minimal metro app UI for real-time routes, ticket booking, and station info, built for speed, clarity, and everyday commuters.</p>
+        </div>
+        <div class="project-card" data-scroll data-scroll-speed="3">
+          <img src="img2.png" alt="Project 3" />
+          <h3>FeelFit</h3>
+          <p>FeelFit is a modern innerwear brand built around one idea Comfort is confidence. The app focuses on softness and emotional connection especially for first-time users.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" data-scroll-section>
+  <div class="footer-content">
+    <p class="tagline">Minimal design, enhanced by details and materials</p>
+    <p class="copyright">© 2025 Rajabathula Sai Durga Mahesh. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  </div> <!-- end scroll-container -->
+
+  <script src="script.js"></script>
+
+  <!-- Locomotive Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      lerp: 0.08
+    });
+  </script>
+</body>
+</html>
